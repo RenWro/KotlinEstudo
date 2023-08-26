@@ -84,40 +84,76 @@
 //            println("Digite a um valor: ")
 //        }
 //
-fun main() {
-    // Recebendo as três variáveis do usuário
-    println("Digite o primeiro número:")
-    val num1 = readLine()!!.toInt()
+//fun main() {
+//    // Recebendo as três variáveis do usuário
+//    println("Digite o primeiro número:")
+//    val num1 = readLine()!!.toInt()
+//
+//    println("Digite o segundo número:")
+//    val num2 = readLine()!!.toInt()
+//
+//    println("Digite o terceiro número:")
+//    val num3 = readLine()!!.toInt()
+//
+//    // Encontrando o maior número
+//    val max = if (num1 >= num2 && num1 >= num3) {
+//        num1
+//    } else if (num2 >= num1 && num2 >= num3) {
+//        num2
+//    } else {
+//        num3
+//    }
+//
+//    // Encontrando o menor número
+//    val min = if (num1 <= num2 && num1 <= num3) {
+//        num1
+//    } else if (num2 <= num1 && num2 <= num3) {
+//        num2
+//    } else {
+//        num3
+//    }
+//
+//    // Calculando o número do meio
+//    val middle = num1 + num2 + num3 - max - min
+//
+//    // Imprimindo em ordem decrescente
+//    println("Números em ordem decrescente: $max, $middle, $min")
+//}
 
-    println("Digite o segundo número:")
-    val num2 = readLine()!!.toInt()
 
-    println("Digite o terceiro número:")
-    val num3 = readLine()!!.toInt()
+//fun main() {
+//    println("Digite um número,1 sendo 1 para Conta Corrente, 2 para Cartão de crédito e 3 para Internet Banking: ")
+//    var opcao = readLine()!!.toInt()
+//    when ( opcao ){
+//        1 -> println("Conta Corrente")
+//        2 -> println("Cartão de crédito")
+//        3 -> println("Internet Banking")
+//        else ->{
+//            println("nenhuma opção encontrada")
+//            println("Fale com um dos nossos atendentes")
+//        }
+//    }
+//}
 
-    // Encontrando o maior número
-    val max = if (num1 >= num2 && num1 >= num3) {
-        num1
-    } else if (num2 >= num1 && num2 >= num3) {
-        num2
-    } else {
-        num3
-    }
+fun main(args: Array<String>) {
+    var fusca = Carro()
 
-    // Encontrando o menor número
-    val min = if (num1 <= num2 && num1 <= num3) {
-        num1
-    } else if (num2 <= num1 && num2 <= num3) {
-        num2
-    } else {
-        num3
-    }
+    println("Digite o ID do Carro:")
+    fusca.id = readLine()!!.toInt()
+    println("Digite a cor do Carro")
+    fusca.cor = readLine()!!.toString()
+    println("Digite o modelo do Carro")
+    fusca.modelo = readLine()!!.toString()
+    println("Digite o ano do Carro")
+    fusca.ano = readLine()!!.toInt()
 
-    // Calculando o número do meio
-    val middle = num1 + num2 + num3 - max - min
+//    val somaResultado = fusca.soma(1, 2)
+//    println("A soma é $somaResultado")
 
-    // Imprimindo em ordem decrescente
-    println("Números em ordem decrescente: $max, $middle, $min")
+    val total = fusca.usoCarro(fusca.ano)
+    println("O carro tem $total anos de uso")
+
 }
+
 
 
