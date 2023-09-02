@@ -134,26 +134,76 @@
 //        }
 //    }
 //}
+//
+//fun main(args: Array<String>) {
+//    var fusca = Carro()
+//
+//    println("Digite o ID do Carro:")
+//    fusca.id = readLine()!!.toInt()
+//    println("Digite a cor do Carro")
+//    fusca.cor = readLine()!!.toString()
+//    println("Digite o modelo do Carro")
+//    fusca.modelo = readLine()!!.toString()
+//    println("Digite o ano do Carro")
+//    fusca.ano = readLine()!!.toInt()
+//
+////    val somaResultado = fusca.soma(1, 2)
+////    println("A soma é $somaResultado")
+//
+//    val total = fusca.usoCarro(fusca.ano)
+//    println("O carro tem $total anos de uso")
+//
+//}?
 
-fun main(args: Array<String>) {
-    var fusca = Carro()
+//fun main (args: Array<String>) {
+//    //collection list
+//    var items = listOf("SP", "BH", "RJ") // lista imutavel
+//    var numeros =  mutableListOf(1, 2,43); //totalmente mutavel
+//
+//    println(items)
+//    println(numeros)
+//
+//
+//    var mix= arrayListOf("SP", 1,3) //array mutavel com funcoes
+//    println(mix)
+//    mix.add("MG")
+//    println(mix)
+//    println(mix.size)
+//    println(mix.isEmpty())
+//    println(mix.contains("SP"))
+//    mix.remove(1)
+//    println(mix)
+//    mix.sort()
+//    println(mix)
+//
+//    var nomes = arrayListOf("Jose", "Paulo", "Maira", "Felipe")
+//        nomes.sort()
+//        println(nomes)
+//
+//            for (nominal in nomes) {
+//            println("Nome: $nominal")
+//            }
+//        nomes.add("Roger")
+//        println(nomes)
+//        nomes.add("Joana")
+//        println(nomes)
+//
+//
+//    //mais rapido que os outros e mesmas funções que a list
+//    var set = hashSetOf(1, 2, 3, 4, 4, 60, 70)
+//        println(set)
+//        set.add(100)
+//        set.remove(3)
+//        println(set)
+//
+//    var map = arrayListOf(
+//        hashMapOf("cep" to 12345, "uf" to "ce", "cidade" to "Fortaleza", "bairro" to "São João do Tauape"),
+//        hashMapOf("cep" to 12346, "uf" to "SP", "cidade" to "São Paulo", "bairro" to "Jardim Paulista"),
+//        hashMapOf("cep" to 12347, "uf" to "MG", "cidade" to "Belo Horizonte", "bairro" to "Savassi"),
+//
+//        )
 
-    println("Digite o ID do Carro:")
-    fusca.id = readLine()!!.toInt()
-    println("Digite a cor do Carro")
-    fusca.cor = readLine()!!.toString()
-    println("Digite o modelo do Carro")
-    fusca.modelo = readLine()!!.toString()
-    println("Digite o ano do Carro")
-    fusca.ano = readLine()!!.toInt()
 
-//    val somaResultado = fusca.soma(1, 2)
-//    println("A soma é $somaResultado")
-
-    val total = fusca.usoCarro(fusca.ano)
-    println("O carro tem $total anos de uso")
-
-}
-
-
-
+//
+//}
+//
